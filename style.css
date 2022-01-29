@@ -1,0 +1,58 @@
+.header{
+    background: gray;
+    height: 100px;
+    width: 1000px;
+    /* margin 은 4 방향으로 적용되기 때문에 아래처럼 작성 가능
+    위 우측 아래 좌측 순서*/
+    margin: 0px auto 20px auto; 
+}
+
+#nav{
+    height: 50px;
+    background: gray;
+    width: 1000px;
+    margin: 0px auto 20px auto;
+}
+
+#footer{
+    height: 100px;
+    background-color: gray;
+    width: 1000px;
+    margin: 0px auto 50px auto;
+}
+
+#content{
+    background-color: gray;
+    width: 1000px;
+    margin: 2px auto 20px auto;
+    height: 600px;
+}
+
+.body{
+    width: 1000px;
+    margin: auto;
+}
+
+.section_main{
+    width: 700px;
+    background-color: yellow;
+    float: left;
+}
+
+.aside{
+    width: 300px;
+    background-color: red;
+    float: left;
+    height: 600px;
+}
+
+.section{
+    background-color: pink;
+    height: 300px;
+
+}
+
+.article{
+    background-color: green;
+    height: 300px;
+}
