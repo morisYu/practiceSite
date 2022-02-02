@@ -69,3 +69,47 @@ HTML 코드
 
 float 을 사용하지 않았을 때는 <div> 두 개가 서로 세로로 배치가 되지만 float 을 사용하면 가로로 배치가 됨
 ```
+
+<br>
+
+:rocket: 테두리 생성  
+
+> border 사용해서 테두리를 생성 가능  
+
+```
+테두리 스타일
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+테두리 너비(스타일을 먼저 설정해야 너비 설정 가능)
+
+p.one {
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+
+p.three {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+}
+
+단축으로 사용
+
+border: 5px solid red; /* 테두리 전체 적용 */
+border-bottom: 5px solid red; /* 테두리 하단만 적용 */
+```
