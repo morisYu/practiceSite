@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* layout */
+#header{
+	background: #eee;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.header_inner{
+	width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#nav{
+	height: 40px;
+	border-bottom: 1px solid #efefef;
+	border-top: 1px solid #efefef;
+	z-index: 200; /* 뎁스 depth값을 설정, 각 영역간의 높이값을 변경하여 뒤로 숨는 현상을 방지 */
+	position: relative; /* depth값을 적용하고, 서브메뉴의 스테이지를 설정하기 위해서 넣은 속성  */
+}
+
+.nav_inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#footer{
+	height: 100px;
+	background: #eee;
+}
+
+.footer_inner{
+	width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#content{
+	background: #eee;
+	width: 1000px;
+	margin: 20px auto 20px auto;
+}
+
+.section_main{
+	width: 700px;
+	background: #ff0;
+	float: left;
+}
+
+.aside{
+	width: 300px;
+	background: #f00;
+	float: left;
+	height: 600px;
+}
+
+.section{
+	background: #f0f;
+	height: 300px;
+}
+
+
+.article{
+	background: green;
+	height: 300px;
+}
