@@ -57,12 +57,12 @@
 }
 
 .section{
-	background: #f0f;
+	background: rgb(173, 173, 173);
 	height: 300px;
 }
 
 
 .article{
-	background: green;
+	background: rgb(239, 246, 206);
 	height: 300px;
 }

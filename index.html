@@ -2,24 +2,25 @@
 <html lang="en">
 
 <head>
+    <title>연습사이트</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=google">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--<link rel="stylesheet" href="style.css"> 기존 style.css 를 여러 개의 css 파일로 분류-->
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/common.css">
-    <link rel="stylesheet" href="./assets/layout.css">
-    <link rel="stylesheet" href="./assets/navigation.css">
-    <link rel="stylesheet" href="./assets/accordion.css">
-
-    <title>연습사이트</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" href="./assets/css/accordion.css">
 
     <!-- 아코디언, 달력 기능을 위한 javascript(jQuery 홈페이지에서 코드 가져옴) -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!-- 롤링 배너 기능을 위한 링크 -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
 
 
 </head>
@@ -59,10 +60,7 @@
 
     <!-- contents -->
     <div id="content" class="clearfix">
-        <div class="section_main">
-            <div class="section"> section </div>
-            <div class="article"> article </div>
-        </div>
+
         <div class="aside">
             <!-- 아코디언 -->
             <dl class="accordion">
@@ -127,6 +125,42 @@
             Date: <div id="datepicker"></div>
             <!-- /달력 -->
         </div>
+
+        <div class="section_main">
+            <div class="section">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- // Swiper -->
+            </div>
+
+            <div class="article">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- // Swiper -->
+            </div>
+        </div>
+
     </div>
     <!-- /contents -->
 
@@ -134,6 +168,10 @@
     <div id="footer"> footer </div>
     <a href="http://"></a>
     <!-- /footer -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
 
     <script>
         // $(function () {
@@ -155,16 +193,33 @@
                 accordionTitle.next().slideUp();
                 $(this).next().slideDown();
             }
-
-
-
-
         });
 
 
         $(function () {
             $("#datepicker").datepicker();
         });
+
+        // Swiper 옵션 사용 방법은 Swiper Demo 코드에서 `script` 부분 참고할 것
+        // https://github.com/nolimits4web/swiper.git
+        new Swiper('.section .swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+
+        new Swiper('.article .swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            }
+        });
+
     </script>
 
 </body>

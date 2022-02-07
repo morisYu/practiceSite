@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* 배너 화살표 높이 조절 */
+.section .swiper-container{
+	height: 100%;
+}
+
+.article .swiper-container{
+	height: 100%;	
+}
