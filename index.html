@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/common.css">
     <link rel="stylesheet" href="./assets/layout.css">
     <link rel="stylesheet" href="./assets/navigation.css">
+    <link rel="stylesheet" href="./assets/accordion.css">
 
     <title>연습사이트</title>
 
@@ -19,15 +20,7 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion();
-        });
 
-        $(function () {
-            $("#datepicker").datepicker();
-        });
-    </script>
 
 </head>
 
@@ -72,7 +65,15 @@
         </div>
         <div class="aside">
             <!-- 아코디언 -->
-            <div id="accordion">
+            <dl class="accordion">
+                <dt class="accordion-title">title</dt>
+                <dd class="accordion-desc">description1</dd>
+                <dt class="accordion-title">title2</dt>
+                <dd class="accordion-desc">description2</dd>
+                <dt class="accordion-title">title3</dt>
+                <dd class="accordion-desc">description3</dd>
+            </dl>
+            <!-- <div id="accordion">
                 <h3>Section 1</h3>
                 <div>
                     <p>
@@ -119,9 +120,9 @@
                         inceptos himenaeos.
                     </p>
                 </div>
-            </div>
+            </div> -->
             <!-- /아코디언 -->
-            
+
             <!-- 달력 -->
             Date: <div id="datepicker"></div>
             <!-- /달력 -->
@@ -133,6 +134,38 @@
     <div id="footer"> footer </div>
     <a href="http://"></a>
     <!-- /footer -->
+
+    <script>
+        // $(function () {
+        //     $("#accordion").accordion();
+        // });
+
+        // 아코디언 javascript로 만들기
+
+        var accordionTitle = $('.accordion-title');
+        accordionTitle.bind('click', function () {
+            var _self = $(this);
+            if (!_self.hasClass('isOpen')) {
+
+                // 단순히 열고 닫게 하는 부분(선택하는 항목이 `isOpen` 클래스가 붙음)
+                accordionTitle.removeClass('isOpen');
+                $(this).addClass('isOpen');
+
+                // 슬라이드로 열고 닫게 하는 부분
+                accordionTitle.next().slideUp();
+                $(this).next().slideDown();
+            }
+
+
+
+
+        });
+
+
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
 
 </body>
 

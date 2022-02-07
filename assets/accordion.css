@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.accordion-title{
+	background: #fff;
+	color: #000;
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px solid #efefef;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.accordion-desc{
+	height: 100px;
+	background: blue;
+	display: none;
+}
+
+/* .accordion .isOpen + .accordion-desc{
+	display: block;
+} */
