@@ -1,15 +1,25 @@
 @charset "UTF-8";
 
+/* 웹 폰트 적용 */
+@font-face {
+    font-family: 'KCC-Jeongbeom';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/KCC-Jeongbeom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .navigation_list{
 	float: left;
 	width: 142px;
 	line-height: 40px; /* 텍스트를 상하로 가운데 정렬하는 속성 */
 	text-align: center;
+	font-family: 'HS-Regular';
 }
 
 .navigation_link{
 	font-size: 16px;
 	color: #00ab33;
+	font-family: 'KCC-Jeongbeom';
 }
 
 .sub_menu{

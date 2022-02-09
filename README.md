@@ -5,6 +5,8 @@
 ### 참고 사이트  
 
 - [일주일만에 웹사이트 만들기](https://youtu.be/YoqVA95cPzQ)
+- [Swiper(롤링배너)](https://swiperjs.com/)
+- [눈누 무료폰트](https://noonnu.cc/)
 
 
 ### 팁 
@@ -119,4 +121,51 @@ p.three {
 
 border: 5px solid red; /* 테두리 전체 적용 */
 border-bottom: 5px solid red; /* 테두리 하단만 적용 */
+```
+
+<br>
+
+# 2022.02.07
+
+Swiper 로 롤링배너 만들기  
+
+:rocket: 사용 방법  
+
+> Swiper 홈페이지에서 `Get Started` 들어가면 설명 있음  
+> `Use Swiper from CDN` 에서는 assets 파일 다운받지 않고 온라인 링크를 걸어주면 배너 사용 가능  
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+```  
+
+# 2022.02.09  
+
+무료폰트 사이트에서 웹 폰트 적용하기  
+
+:rocket: 웹 폰트 사용 방법  
+
+> 눈누 사이트(한글 많음)에서 마음에 드는 폰트 선택하면 `웹폰트로 사용` 부분에 코드 있음.  
+> 코드를 그대로 복사 후 적용하고자 하는 css 파일에 전부 붙여넣고, 글씨가 적용되는 태그에 `font-family: '글씨체';` 항목 붙이면 됨  
+
+```css
+@font-face {
+    font-family: 'KCC-Jeongbeom';  
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/KCC-Jeongbeom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+css 파일에 이 항목 전부 붙여넣은 다음에
+font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵션에 붙이면 됨
+
+/* 글씨가 적용되는 태그 옵션에 font-family 붙임 */
+.navigation_link{
+	font-size: 16px;
+	color: #00ab33;
+	font-family: 'KCC-Jeongbeom';
+}
 ```

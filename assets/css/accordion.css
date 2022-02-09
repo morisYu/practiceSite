@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .accordion-title{
 	background: #fff;
 	color: #000;
@@ -8,11 +15,13 @@
 	border-top: 1px solid #efefef;
 	padding-left: 10px;
 	cursor: pointer;
+	font-family: 'HS-Regular';
+	font-size: large;
 }
 
 .accordion-desc{
 	height: 100px;
-	background: blue;
+	background: rgb(146, 228, 228);
 	display: none;
 }
 
