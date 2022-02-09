@@ -18,8 +18,9 @@
 
 .navigation_link{
 	font-size: 16px;
-	color: #00ab33;
+	color: #0e1427;
 	font-family: 'KCC-Jeongbeom';
+	font-weight: bold;
 }
 
 .sub_menu{
