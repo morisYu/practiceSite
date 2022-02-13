@@ -1,0 +1,37 @@
+nav a{
+    text-decoration: none;
+    color: black;
+    margin:  2em;
+
+}
+
+/* nav 태그 중에서 첫 번째 nav 만 적용 */
+nav:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+/* nav 태그 중에서 두 번째 nav 부터는 순번으로 정의 */
+nav:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#horizontal-underline{
+    position:absolute;
+    width: 0;
+    background-color: pink;
+    top:0;
+    height: 4px;
+    transition: 0.5s;
+}
+
+#vertical-underline{
+    position: absolute;
+    width: 0;
+    background-color: rgb(134, 185, 226);
+    top:0px;
+    height: 4px;
+    transition: 0.5s;
+}
