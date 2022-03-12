@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    height: 1400px;
+}
+
+section{
+    /* background 는 내용이 있어야 보이기 때문에 높이를 설정해줌 */
+    background: url(https://cdn.pixabay.com/photo/2020/03/26/21/08/park-4971822_960_720.png) fixed;
+    height: 600px;
+}
+
+.photo{
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+h1{
+    font-size: 6em;
+    width: 250px;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    /* slide keframes 애니메이션 2 초 동안 실행(js 없이 슬라이드) */
+    /* animation: slide 2s; */
+}
+
+/* 글씨를 왼쪽에서 오른쪽으로 이동하도록 하는 기능 */
+@keyframes slide {
+    from{
+        left: -100px;
+        opacity: 0;
+    }
+    to{
+        left: 400px;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from{
+        left: 400px;
+        opacity: 1;
+    }
+    to{
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin:  2em;
+
+}
