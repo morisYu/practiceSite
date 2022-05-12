@@ -168,4 +168,35 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 	color: #00ab33;
 	font-family: 'KCC-Jeongbeom';
 }
-```
+```  
+
+# 2022.05.12  
+
+### 쉽게 배우는 JSP WEB PROGRAMMING  
+
+> project/JSP_web 폴더에 작업 중  
+
+- 교재 실습: project/JSP_web/JSPBook 폴더에 작업  
+- 쇼핑몰 실습: project/JSP_web/WebMarket 폴더에 작업  
+
+#### chap02. 스크립트 태그: 시작 페이지 만들기  
+
+- 선언문 태그의 기능과 사용법  
+- 스크립틀릿 태그의 기능과 사용법  
+- 표현문 태그의 기능과 사용법  
+
+<p style="color: blue; font-size: 1.5em"> 쇼핑몰 </p>  
+
+- 시작 페이지 작성하기  
+- 부트스트랩 CSS 적용하기  
+
+#### chap03. 디렉티브 태그: 한글 출력 및 페이지 모듈화하기  
+
+- page 디렉티브 태그의 기능과 사용법  
+- include 디렉티브 태그의 기능과 사용법  
+- taglib 디렉티브 태그의 기능과 사용법  
+
+<p style="color: blue; font-size: 1.5em"> 쇼핑몰 </p>  
+
+- 한글 적용 및 현재 접속시간 출력하기  
+- 웹 페이지 모듈화하기(menu.jsp / welcome.jsp / footer.jsp)
