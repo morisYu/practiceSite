@@ -2,7 +2,8 @@
 	<div class="container">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="./welcome.jsp">Home</a>
-			<a class="navbar-brand" href="./products.jsp">Product List</a>
+			<a class="navbar-brand" href="./products.jsp">List</a>
+			<a class="navbar-brand" href="./addProduct.jsp">Registration</a>
 		</div>
 	</div>
 </nav>

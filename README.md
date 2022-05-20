@@ -222,3 +222,16 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
   
 - 상품 상세 정보 표시하기    
+
+#### chap06. 폼 태그: 상품 등록 페이지 만들기  
+
+- 폼 처리의 개요  
+- form 태그의 기능과 사용법  
+- input 태그의 기능과 사용법  
+- select 태그의 기능과 사용법  
+- textarea 태그의 기능과 사용법  
+- 폼 데이터 처리하기  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+  
+- 상품 등록 페이지 만들기  
