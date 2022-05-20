@@ -170,7 +170,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 }
 ```  
 
-# 2022.05.12  
+# 2022.05.12 ~   
 
 ### 쉽게 배우는 JSP WEB PROGRAMMING  
 
@@ -185,7 +185,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 - 스크립틀릿 태그의 기능과 사용법  
 - 표현문 태그의 기능과 사용법  
 
-<p style="color: blue; font-size: 1.5em"> 쇼핑몰 </p>  
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>  
 
 - 시작 페이지 작성하기  
 - 부트스트랩 CSS 적용하기  
@@ -196,7 +196,29 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 - include 디렉티브 태그의 기능과 사용법  
 - taglib 디렉티브 태그의 기능과 사용법  
 
-<p style="color: blue; font-size: 1.5em"> 쇼핑몰 </p>  
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>  
 
 - 한글 적용 및 현재 접속시간 출력하기  
-- 웹 페이지 모듈화하기(menu.jsp / welcome.jsp / footer.jsp)
+- 웹 페이지 모듈화하기(menu.jsp / welcome.jsp / footer.jsp)  
+
+#### chap04. 액션 태그: 상품 목록 표시하기  
+
+- forward 액션 태그의 기능과 사용법  
+- include 액션 태그의 기능과 사용법  
+- param 액션 태그의 기능과 사용법  
+- 자바빈즈 액션 태그의 기능과 사용법  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>  
+
+- 상품 목록 표시하기  
+
+#### chap05. 내장 객체: 상품 상세 정보 표시하기  
+
+- 내장 객체의 개요  
+- request 내장 객체의 기능과 사용법  
+- response 내장 객체의 기능과 사용법  
+- out 내장 객체의 기능과 사용법  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+  
+- 상품 상세 정보 표시하기    
