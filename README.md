@@ -235,3 +235,14 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
   
 - 상품 등록 페이지 만들기  
+
+#### chap07. 파일 업로드: 상품 이미지 등록하기  
+
+- 파일 업로드의 개요  
+- MutipartRequest를 이용한 파일 업로드  
+- Commons-FileUpload를 이용한 파일 업로드  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+  
+- 상품 이미지 등록하기
+    * 상품 이미지를 D 드라이브에 등록은 잘 되는데 D 드라이브에서 사진을 불러오는게 안됨.(해결과제)

@@ -5,9 +5,11 @@
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
 <head>
-	<link rel="stylesheet" 
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<title>상품 목록</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+crossorigin="anonymous">
+
+<title>상품 목록</title>
 </head>
 <body>
 	<jsp:include page="menu.jsp" />
@@ -27,6 +29,8 @@
 					Product product = listOfProducts.get(i);
 			%>
 			<div class="col-md-4">
+			<%-- D 드라이브에 저장한 사진이 출력 안됨 --%>
+				<img src="./resources/images/<%= product.getFilename() %>" style="height: 150px">
 				<h3><%= product.getPname() %></h3>
 				<p><%= product.getDescription() %> </p>
 				<p><%= product.getUnitPrice() %>원 </p>

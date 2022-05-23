@@ -3,8 +3,10 @@
 <%@ page import="dao.ProductRepository" %>
 <html>
 <head>
-<link rel="stylesheet" 
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+crossorigin="anonymous">
+
 <title>상품 상세 정보</title>
 </head>
 <body>
@@ -22,6 +24,10 @@
 	
 	<div class="container">
 		<div class="row">
+			<div class="col-md-5">
+				<%-- D 드라이브에 저장한 사진이 출력 안됨 --%>
+				<img src="./resources/images/<%= product.getFilename() %>" style="height: 200px">
+			</div>
 			<div class="col-md-6">
 				<h3><%= product.getPname() %></h3>
 				<p><%= product.getDescription() %>
@@ -32,7 +38,7 @@
 				<p><b>재고 수</b> : <%= product.getUnitsInStock() %>
 				<h4><%= product.getUnitPrice() %></h4>
 				<a href="#" class="btn btn-info">상품 주문 &raquo;</a>
-				<a href="./products.jsp" class="btn btn-secondary">상품 목록< &raquo;/a>
+				<a href="./products.jsp" class="btn btn-secondary">상품 목록 &raquo;</a>
 			</div>
 		</div>
 		<hr>
@@ -40,13 +46,3 @@
 	<jsp:include page="footer.jsp"/>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
