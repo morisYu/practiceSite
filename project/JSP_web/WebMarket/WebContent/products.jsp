@@ -29,9 +29,10 @@ crossorigin="anonymous">
 					Product product = listOfProducts.get(i);
 			%>
 			<div class="col-md-4">
-			<%-- D 드라이브에 저장한 사진이 출력 안됨 --%>
-				<img src="./resources/images/<%= product.getFilename() %>" style="height: 150px">
+				<%-- 크롬에서 외부 저장소 이미지 접근 막아놔서 프로젝트 폴더에 있는 Server.xml 에서 경로 추가해야함 --%>
+				<img src="/fileupload/<%= product.getFilename() %>" style="height: 150px">
 				<h3><%= product.getPname() %></h3>
+				<p><%= product.getFilename() %>
 				<p><%= product.getDescription() %> </p>
 				<p><%= product.getUnitPrice() %>원 </p>
 				<p> <a href="./product.jsp?id=<%= product.getProductId() %>"

@@ -141,7 +141,7 @@ Swiper 로 롤링배너 만들기
 />
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-```  
+```
 
 # 2022.02.09  
 
@@ -168,7 +168,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 	color: #00ab33;
 	font-family: 'KCC-Jeongbeom';
 }
-```  
+```
 
 # 2022.05.12 ~   
 
@@ -220,7 +220,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 - out 내장 객체의 기능과 사용법  
 
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
-  
+
 - 상품 상세 정보 표시하기    
 
 #### chap06. 폼 태그: 상품 등록 페이지 만들기  
@@ -233,7 +233,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 - 폼 데이터 처리하기  
 
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
-  
+
 - 상품 등록 페이지 만들기  
 
 #### chap07. 파일 업로드: 상품 이미지 등록하기  
@@ -243,6 +243,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 - Commons-FileUpload를 이용한 파일 업로드  
 
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
-  
+
 - 상품 이미지 등록하기
-    * 상품 이미지를 D 드라이브에 등록은 잘 되는데 D 드라이브에서 사진을 불러오는게 안됨.(해결과제)
+    * 상품 이미지를 D 드라이브에 등록은 잘 되는데 D 드라이브에서 사진을 불러오는게 안됨.
+    * 크롬 브라우저에서 외부 저장소 접근을 못하게 해서 프로젝트중인 폴더 안에 있는 톰캣의 Server.xml 수정

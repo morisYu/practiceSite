@@ -25,8 +25,8 @@ crossorigin="anonymous">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<%-- D 드라이브에 저장한 사진이 출력 안됨 --%>
-				<img src="./resources/images/<%= product.getFilename() %>" style="height: 200px">
+				<%-- 크롬에서 외부 저장소 이미지 접근 막아놔서 프로젝트 폴더에 있는 Server.xml 에서 경로 추가해야함 --%>
+				<img src="/fileupload/<%= product.getFilename() %>" style="height: 200px">
 			</div>
 			<div class="col-md-6">
 				<h3><%= product.getPname() %></h3>
