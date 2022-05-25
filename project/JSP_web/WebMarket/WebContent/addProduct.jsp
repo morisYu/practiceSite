@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
 integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
 crossorigin="anonymous">
-
+<script type="text/javascript" src="./resources/js/validation.js"></script>
 <title>상품 등록</title>
 </head>
 <body>
@@ -20,21 +20,21 @@ crossorigin="anonymous">
 			<div class="form-group row">
 				<label class="col-sm-2">상품 코드</label>
 				<div class="col-sm-3">
-					<input type="text" name="productId" class="form-control">
+					<input type="text" name="productId" id="productId" class="form-control">
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label class="col-sm-2">상품명</label>
 				<div class="col-sm-3">
-					<input type="text" name="name" class="form-control">
+					<input type="text" name="name" id="name" class="form-control">
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label class="col-sm-2">가격</label>
 				<div class="col-sm-3">
-					<input type="text" name="unitPrice" class="form-control">
+					<input type="text" name="unitPrice" id="unitPrice" class="form-control">
 				</div>
 			</div>
 			
@@ -62,7 +62,7 @@ crossorigin="anonymous">
 			<div class="form-group row">
 				<label class="col-sm-2">재고 수</label>
 				<div class="col-sm-3">
-					<input type="text" name="unitsInStock" class="form-control">
+					<input type="text" name="unitsInStock" id="unitsInStock" class="form-control">
 				</div>
 			</div>
 			
@@ -83,7 +83,7 @@ crossorigin="anonymous">
 			
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-0">
-					<input type="submit" class="btn btn-primary" value="등록">
+					<input type="button" class="btn btn-primary" value="등록" onclick="CheckAddProduct()">
 				</div>
 			</div>
 			

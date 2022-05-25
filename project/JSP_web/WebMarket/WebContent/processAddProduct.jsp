@@ -8,7 +8,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 
-	String filename = "";
+	// String filename = "";
 	// D 드라이브에 저장은 잘 됨
 	String realFolder = "D:/upload";
 	int maxSize = 5 * 1024 * 1024;
@@ -46,6 +46,7 @@
 	String fname = (String) files.nextElement();
 	String fileName = multi.getFilesystemName(fname);
 	
+	
 	ProductRepository dao = ProductRepository.getInstance();
 	
 	Product newProduct = new Product();
@@ -57,7 +58,7 @@
 	newProduct.setCategory(category);
 	newProduct.setUnitsInStock(stock);
 	newProduct.setCondition(condition);
-	newProduct.setFilename(filename);
+	newProduct.setFilename(fileName);
 	
 	dao.addProduct(newProduct);
 	
