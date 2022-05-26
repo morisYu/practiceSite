@@ -7,6 +7,7 @@
 
 </head>
 <body>
+<form  action="" method="post" name="form_table">
 	<table>
 		<tr>
 			<td class="side">아이디</td>
@@ -20,7 +21,7 @@
 		<tr>
 			<td class="side">비밀번호</td>
 			<td>
-				<input type="text">
+				<input type="text" minlength="8" maxlength="12">
 				<h5>8-12자의 영문대소문자, 숫자, 특수문자 중 2종류 이상을 조합한 10자리 이상 또는 3종류이상을 조합한
 					8자리 이상 사용 가능.
 				</h5>
@@ -30,7 +31,7 @@
 		<tr>
 			<td class="side">비밀번호 확인</td>
 			<td>
-				<input type="text">
+				<input type="text" minlength="8" maxlength="12">
 				<h5>비밀번호를 다시 확인해주세요.</h5>
 			</td>
 		</tr>
@@ -38,7 +39,7 @@
 		<tr>
 			<td class="side">이름</td>
 			<td>
-				<input type="text">
+				<input type="text" minlength="2" maxlength="4">
 				<h5 style="color: #FF6600;">이름을 입력해 주세요.</h5>
 			</td>
 		</tr>
@@ -190,5 +191,6 @@
 	</table>
 	<h6> ※회원님을 위한 인증은 가입 후 회원정보수정에서 인증하실 수 있습니다.</h6>
 	<input type="submit" value="확인">
+</form>
 </body>
 </html>
