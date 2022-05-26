@@ -1,0 +1,65 @@
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top: 10px;
+}
+.sub_tbl{
+	width: 100%;
+	text-align: center;
+}
+.sub_tbl th:nth-child(2){
+	border: 1px solid #999999;
+	width: 20%;
+}
+.sub_tbl td:nth-child(2){
+	border: 1px solid #999999;
+}
+.side{
+	text-align: center;
+	font-weight: bold;
+	width: 200px;
+	background: #D7F1FA;
+	border-right: 1px solid #999999;
+}
+select{
+	height: 25px;
+	width: 90px;
+}
+tr{
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+th{
+	background: #D7F1FA;
+	height: 30px;
+}
+td{
+	padding: 10px;
+}
+h5, h6{
+	margin: 5px 0px;
+}
+h5{
+	color: purple;
+}
+input{
+	margin: 4px 0px;
+}
+input[type="text"]{
+	height: 20px
+}
+input[type="button"]{
+	width: 100px;
+	height: 25px;
+	background: white;
+	border: 1px solid blue;
+	color: blue;
+}
+input[type="submit"]{
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 30px;
+	background: blue;
+	color: white;
+}
