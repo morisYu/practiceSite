@@ -10,6 +10,8 @@ crossorigin="anonymous">
 <title>상품 등록</title>
 </head>
 <body>
+	<%-- .properties 파일 생성할 때는 Preference > content Types > Text > Java Properties File 의 Encoding 설정이 'EUC-KR'로 되어있어야 함 --%>
+	<%-- .properties 파일을 한글로 보고싶으면 Encoding 설정을 'UTF-8'로 바꾸면 되지만 웹에서 다 깨짐 --%>
 	<fmt:setLocale value='<%= request.getParameter("language") %>' />
 	<fmt:bundle basename="bundle.message" >
 	<jsp:include page="menu.jsp"/>
