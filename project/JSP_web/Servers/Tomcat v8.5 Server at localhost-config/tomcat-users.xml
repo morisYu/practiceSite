@@ -31,8 +31,7 @@
   them. You will also need to set the passwords to something appropriate.
 -->
 
-<!-- 기존 주석처리 되어있는 것을 삭제하고, 주어진 사용자와 역할에 대한 비밀번호를 작성 -->
-
+<!-- admin 계정 추가 -->
   <role rolename="tomcat"/>
   <role rolename="role1"/>
   <role rolename="admin"/>

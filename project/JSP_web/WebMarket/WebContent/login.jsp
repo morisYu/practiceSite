@@ -10,7 +10,7 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 crossorigin="anonymous">
 </head>
 <body>
-	<jsp:include page="menu.jsp">
+	<jsp:include page="menu.jsp"/>
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">로그인</h1>
@@ -28,7 +28,15 @@ crossorigin="anonymous">
 				}
 			%>
 			<form class="form-signin" action="j_security_check" method="post">
-				
+				<div class="form-group">
+					<label for="inputUserName" class="sr-only">User Name</label>
+					<input type="text" class="form-control" placeholder="ID" name="j_username"	required autofocus>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword" class="sr-only">Password</label>
+					<input type="password" class="form-control" placeholder="Password" name="j_password" required>
+				</div>
+				<button class="btn btn-lg btn-success btn-block" type="submit">로그인</button>
 			</form>
 		</div>
 	</div>
