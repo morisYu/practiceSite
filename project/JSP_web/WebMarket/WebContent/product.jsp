@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ page import="dto.Product" %>
 <%@ page import="dao.ProductRepository" %>
+<%@ page errorPage="exceptionNoProductId.jsp" %>
 <html>
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 

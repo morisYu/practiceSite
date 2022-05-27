@@ -36,6 +36,21 @@
 			<form-error-page>/ch10/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
+	
+	<!-- 오류가 발생했을 때 오류 상태와 오류 페이지를 출력 -->
+	
+	<!-- 에러코드 500 오류가 발생했을 때 오류 상태와 오류 페이지를 출력 -->
+	<!-- 에러코드 500: 서버 내부의 에러(JSP에서 예외가 발생하는 경우) -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/ch11/errorCode_error.jsp</location>
+	</error-page>
+	
+	<!-- 예외 유형에 따른 오류 페이지 출력 -->
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/ch11/exceptionType_error.jsp</location>
+	</error-page>
 </web-app>
 
 
