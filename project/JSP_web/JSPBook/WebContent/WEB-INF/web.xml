@@ -51,6 +51,52 @@
 		<exception-type>java.lang.Exception</exception-type>
 		<location>/ch11/exceptionType_error.jsp</location>
 	</error-page>
+	
+	<!-- 파일 필터 구성 -->
+	<filter>
+		<filter-name>Filter01</filter-name>
+		<filter-class>ch12.com.filter.AuthenFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Filter01</filter-name>
+		<url-pattern>/ch12/filter01_process.jsp</url-pattern>
+	</filter-mapping>
+	
+	<!-- 파일 필터 추가 -->
+	<filter>
+		<filter-name>Filter02</filter-name>
+		<filter-class>ch12.com.filter.InitParamFilter</filter-class>
+		<init-param>
+			<param-name>param1</param-name>
+			<param-value>admin</param-value>
+		</init-param>
+		<init-param>
+			<param-name>param2</param-name>
+			<param-value>1234</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Filter02</filter-name>
+		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
+	</filter-mapping>
+
+	<!-- 파일 필터 추가 -->
+	<filter>
+		<filter-name>Filter03</filter-name>
+		<filter-class>ch12.com.filter.LogFileFilter</filter-class>
+		<init-param>
+			<param-name>filename</param-name>
+			
+			<!-- 변수 값과 일치하는 경로(logs 폴더)가 c드라이브에 있어야 함 -->
+			<!-- monitor.log 파일은 없으면 LogFileFilter.java 에서 새로 생성함 -->
+			<param-value>c:\\logs\\monitor.log</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Filter03</filter-name>
+		<url-pattern>/ch12/filter03_process.jsp</url-pattern>
+	</filter-mapping>
+	
 </web-app>
 
 

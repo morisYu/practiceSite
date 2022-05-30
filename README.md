@@ -287,4 +287,14 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
 
-- 예외 처리 페이지 만들기
+- 예외 처리 페이지 만들기 
+
+#### chap12. 필터: 로그 기록하기  
+
+- 필터의 개요  
+- Filter 인터페이스의 구현 클래스  
+- web.xml 파일의 필터 구성    
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 로그 기록하기
