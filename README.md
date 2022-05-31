@@ -297,4 +297,16 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
 
-- 로그 기록하기
+- 로그 기록하기  
+
+#### chap13. 세션: 장바구니 페이지 만들기  
+
+- 세션의 개요  
+- 세션 생성  
+- 세션 정보  
+- 세션 삭제  
+- 세션 유효 시간 설정    
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 장바구니 페이지 만들기  

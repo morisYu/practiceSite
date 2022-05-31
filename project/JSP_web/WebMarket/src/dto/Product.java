@@ -14,6 +14,7 @@ public class Product implements Serializable{
 	private long unitsInStock;
 	private String condition;
 	private String filename;
+	private int quantity;
 	
 	public String getFilename() {
 		return filename;
@@ -95,6 +96,14 @@ public class Product implements Serializable{
 
 	public void setCondition(String condition) {
 		this.condition = condition;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+	
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 	
 }
