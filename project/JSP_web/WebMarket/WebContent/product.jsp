@@ -9,6 +9,15 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 crossorigin="anonymous">
 
 <title>상품 상세 정보</title>
+<script type="text/javascript">
+	function addToCart(){
+		if(confirm("상품을 장바구니에 추가하시겠습니까?")){
+			document.addForm.submit();
+		}else{
+			document.addForm.reset();
+		}
+	}
+</script>
 </head>
 <body>
 	<jsp:include page="menu.jsp" />
@@ -37,9 +46,12 @@ crossorigin="anonymous">
 				<p><b>제조사</b> : <%= product.getManufacturer() %>
 				<p><b>분류</b> : <%= product.getCategory() %>
 				<p><b>재고 수</b> : <%= product.getUnitsInStock() %>
-				<h4><%= product.getUnitPrice() %></h4>
-				<a href="#" class="btn btn-info">상품 주문 &raquo;</a>
-				<a href="./products.jsp" class="btn btn-secondary">상품 목록 &raquo;</a>
+				<h4><%= product.getUnitPrice() %>원</h4>
+				<p> <form name="addForm" action="./addCart.jsp?id=<%= product.getProductId() %>" method="post">
+						<a href="#" class="btn btn-info" onclick="addToCart()">상품 주문 &raquo;</a>
+						<a href="./cart.jsp" class="btn btn-warning">장바구니 &raquo;</a>
+						<a href="./products.jsp" class="btn btn-secondary">상품 목록 &raquo;</a>
+					</form>
 			</div>
 		</div>
 		<hr>
