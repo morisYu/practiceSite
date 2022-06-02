@@ -321,3 +321,14 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
 
 - 주문 처리 페이지 만들기  
+
+#### chap15. 데이터베이스 개발 환경 구축: 상품 관리 테이블 생성 및 상품 등록하기  
+
+- 데이터베이스의 개요  
+- MySQL 개발 환경 구축  
+- 통합 개발 환경과 데이터베이스 연동  
+- MySQL 기본 명령어   
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 상품 관리 테이블 생성 및 상품 등록하기  
