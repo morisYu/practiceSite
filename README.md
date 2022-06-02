@@ -310,3 +310,14 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
 
 - 장바구니 페이지 만들기  
+
+#### chap14. 쿠키: 주문 처리 페이지 만들기
+
+- 쿠키의 개요  
+- 쿠키 생성  
+- 쿠키 정보  
+- 쿠키 삭제   
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 주문 처리 페이지 만들기  
