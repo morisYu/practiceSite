@@ -10,6 +10,7 @@
 			<web-resource-name>WebMarket</web-resource-name>
 			<!-- 경로 앞에 슬러시(/) 없으면 오류 뜸 -->
 			<url-pattern>/addProduct.jsp</url-pattern>
+			<url-pattern>/editProduct.jsp</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>

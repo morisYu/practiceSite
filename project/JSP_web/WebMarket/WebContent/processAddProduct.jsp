@@ -1,18 +1,15 @@
-<%@ page contentType="text/html; charset=utf-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="com.oreilly.servlet.*" %>
 <%@ page import="com.oreilly.servlet.multipart.*" %>
 <%@ page import="java.util.*" %>
-<%@ page import="dto.Product" %>
-<%@ page import="dao.ProductRepository" %>
-
+<%@ page import="java.sql.*" %>
+<%@ include file="dbconn.jsp" %>
 <%
-	request.setCharacterEncoding("utf-8");
+	request.setCharacterEncoding("UTF-8");
 
-	// String filename = "";
-	// D 드라이브에 저장은 잘 됨
 	String realFolder = "D:/upload";
 	int maxSize = 5 * 1024 * 1024;
-	String encType = "utf-8";
+	String encType = "UTF-8";
 	
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType,
 	new DefaultFileRenamePolicy());
@@ -46,21 +43,27 @@
 	String fname = (String) files.nextElement();
 	String fileName = multi.getFilesystemName(fname);
 	
+	PreparedStatement pstmt = null;
 	
-	ProductRepository dao = ProductRepository.getInstance();
+	String sql = "INSERT INTO product VALUES(?,?,?,?,?,?,?,?,?)";
 	
-	Product newProduct = new Product();
-	newProduct.setProductId(productId);
-	newProduct.setPname(name);
-	newProduct.setUnitPrice(price);
-	newProduct.setDescription(description);
-	newProduct.setManufacturer(manufacturer);
-	newProduct.setCategory(category);
-	newProduct.setUnitsInStock(stock);
-	newProduct.setCondition(condition);
-	newProduct.setFilename(fileName);
+	pstmt.setString(1, productId);
+	pstmt.setString(2, name);
+	pstmt.setInt(3, price);
+	pstmt.setString(4, description);
+	pstmt.setString(5, category);
+	pstmt.setString(6, manufacturer);
+	pstmt.setLong(7, stock);
+	pstmt.setString(8, condition);
+	pstmt.setString(9, fileName);
+	pstmt.executeUpdate();
 	
-	dao.addProduct(newProduct);
+	if(pstmt != null){
+		pstmt.close();
+	}
+	if(conn != null){
+		conn.close();
+	}
 	
 	response.sendRedirect("products.jsp");
 %>
