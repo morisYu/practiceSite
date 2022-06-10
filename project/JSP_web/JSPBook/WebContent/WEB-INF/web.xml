@@ -79,7 +79,7 @@
 		<filter-name>Filter02</filter-name>
 		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
 	</filter-mapping>
-
+	
 	<!-- 파일 필터 추가 -->
 	<filter>
 		<filter-name>Filter03</filter-name>
@@ -98,27 +98,3 @@
 	</filter-mapping>
 	
 </web-app>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

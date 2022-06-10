@@ -6,7 +6,7 @@
 	try{
 		String url = "jdbc:mysql://localhost:3306/WebMarketDB?useSSL=false&serverTimezone=Asia/Seoul";
 		String user = "root";
-		String password = "1234";
+		String password = "1111";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		conn = DriverManager.getConnection(url, user, password);

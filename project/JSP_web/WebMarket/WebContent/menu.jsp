@@ -14,7 +14,10 @@
 					<a class="nav-link" href="./addProduct.jsp">상품등록</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./addProduct.jsp">상품수정</a>
+					<a class="nav-link" href="./editProduct.jsp?edit=update">상품수정</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./editProduct.jsp?edit=delete">상품삭제</a>
 				</li>
 			</ul>
 		</div>
