@@ -49,3 +49,22 @@ INSERT INTO product VALUES
 INSERT INTO product VALUES
 	('P1236', 'Galaxy Tbl S', 900000, '3.3-inch, 212.8*125.6*6.6mm, Super AMOLED display, Octa-Core processor', 
 	'Tablet', 'Samsung', 1000, 'new', 'P1236.png');
+
+-- 회원 테이블 생성
+DROP TABLE IF EXISTS member;
+CREATE TABLE member(
+	id VARCHAR(10) NOT NULL,
+    password VARCHAR(10) NOT NULL,
+    name VARCHAR(10) NOT NULL,
+    gender VARCHAR(4),
+    birth VARCHAR(10),
+    mail VARCHAR(30),
+    phone VARCHAR(20),
+    address VARCHAR(90),
+    regist_day VARCHAR(50),
+    PRIMARY KEY(id)
+)DEFAULT CHARSET=UTF8MB4;
+
+DESC member;
+
+SELECT * FROM member;

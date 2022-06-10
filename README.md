@@ -332,3 +332,25 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
 
 - 상품 관리 테이블 생성 및 상품 등록하기  
+
+#### chap16. JDBC로 데이터베이스와 JSP 연동: 상품 조회, 등록, 수정, 삭제하기  
+
+- JDBC의 개요  
+- JDBC 드라이버 로딩 및 DBMS 접속  
+- 데이터베이스 쿼리 실행  
+- 쿼리문 실행 결과 값 가져오기  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 상품 조회, 등록, 수정, 삭제하기    
+
+#### chap17. JSP 표준 태그 라이브러리: 회원 가입, 수정, 탈퇴하기  
+
+- JSTL의 개요  
+- JSTL이 제공하는 태그의 종류와 사용법  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 회원 가입, 수정, 탈퇴하기  
+- member 폴더 내 jsp 파일 분석할것  
+- sql과 연결하는 모든 파일의 `<sql:setDataSource>` url 부분에 useSSL 과 serverTimezone 추가하기  
