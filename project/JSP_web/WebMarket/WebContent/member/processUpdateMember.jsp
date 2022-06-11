@@ -26,7 +26,7 @@
 %>
 
 <sql:setDataSource var="dataSource"
-	url="jdbc:mysql://localhost:3306/WebMarketDB"
+	url="jdbc:mysql://localhost:3306/WebMarketDB?useSSL=false&serverTimezone=Asia/Seoul"
 	driver="com.mysql.jdbc.Driver" user="root" password="1111" />
 
 <sql:update dataSource="${dataSource}" var="resultSet">

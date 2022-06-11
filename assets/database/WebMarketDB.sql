@@ -67,4 +67,6 @@ CREATE TABLE member(
 
 DESC member;
 
+INSERT INTO member VALUES('user02', '2222', '박모씨', '여', '2000/10/11', 'user02@daum.net', '010-2222-5678', 'there is park', now());
+
 SELECT * FROM member;

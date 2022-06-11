@@ -26,12 +26,30 @@
 %>
 
 <sql:setDataSource var="dataSource"
-	url="jdbc:mysql://localhost:3306/WebMarketDB?serverTimezone=Asia/Seoul"
+	url="jdbc:mysql://localhost:3306/WebMarketDB?useSSL=false&serverTimezone=Asia/Seoul"
 	driver="com.mysql.jdbc.Driver" user="root" password="1111" />
 
+<sql:query var="rs" dataSource="${ dataSource }">
+	SELECT id FROM member
+</sql:query>
+
+<c:set var="run" value="true" />
+<c:forEach var="row" items="${ rs.rowsByIndex }">
+	<c:forEach var="column" items="${ row }" varStatus="status">
+		<c:if test="${ run }" >
+			<c:set var="paramId" value="${ param.id }" />
+			<c:set var="columnId" value="${ column }"	/>
+			<c:if test="${ paramId eq columnId }">
+				<c:set var="run" value="false" />
+				<c:redirect url="resultMember.jsp?msg=3" />
+			</c:if>
+		</c:if>
+	</c:forEach>
+</c:forEach>
+
 <sql:update dataSource="${dataSource}" var="resultSet">
-   INSERT INTO member VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-   <sql:param value="<%=id%>" />
+  INSERT INTO member VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  <sql:param value="<%=id%>" />
 	<sql:param value="<%=password%>" />
 	<sql:param value="<%=name%>" />
 	<sql:param value="<%=gender%>" />

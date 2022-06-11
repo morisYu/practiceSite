@@ -11,7 +11,7 @@ crossorigin="anonymous">
 	String sessionId = (String) session.getAttribute("sessionId");
 %>
 <sql:setDataSource var="dataSource"
-	url="jdbc:mysql://localhost:3306/WebMarketDB"
+	url="jdbc:mysql://localhost:3306/WebMarketDB?useSSL=false&serverTimezone=Asia/Seoul"
 	driver="com.mysql.jdbc.Driver" user="root" password="1234" />
 
 <sql:query dataSource="${dataSource}" var="resultSet">

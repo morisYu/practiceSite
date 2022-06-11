@@ -36,12 +36,12 @@ crossorigin="anonymous">
 		<div class="row">
 			<div class="col-md-5">
 				<%-- 크롬에서 외부 저장소 이미지 접근 막아놔서 프로젝트 폴더에 있는 Server.xml 에서 경로 추가해야함 --%>
-				<img src="/fileupload/<%= product.getFilename() %>" style="height: 200px">
+				<img src="/fileupload/<%= product.getFilename() %>" style="width: 100%">
 			</div>
 			<div class="col-md-6">
 				<h3><%= product.getPname() %></h3>
 				<p><%= product.getDescription() %>
-				<p><b>상품코드 : </b><span class="badge badge-danger">
+				<p><b>상품코드 : </b><span class="badge badge-danger" style="color: black; font-size: 1rem;">
 				<%= product.getProductId() %></span>
 				<p><b>제조사</b> : <%= product.getManufacturer() %>
 				<p><b>분류</b> : <%= product.getCategory() %>

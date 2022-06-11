@@ -26,7 +26,7 @@ crossorigin="anonymous">
 			<a href="logout.jsp" class="btn btn-sm btn-success pull-right">logout</a>
 		</div>
 		<form name="newProduct" action="./processAddProduct.jsp" class="form-horizontal" method="post" 
-		enctype="multipart/form-data">
+			enctype="multipart/form-data">
 			<div class="form-group row">
 				<label class="col-sm-2"><fmt:message key="productId" /></label>
 				<div class="col-sm-3">
