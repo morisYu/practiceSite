@@ -354,3 +354,14 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 - 회원 가입, 수정, 탈퇴하기  
 - member 폴더 내 jsp 파일 분석할것  
 - sql과 연결하는 모든 파일의 `<sql:setDataSource>` url 부분에 useSSL 과 serverTimezone 추가하기  
+
+#### chap18. 웹 MVC: 게시판 만들기  
+
+- MVC의 개요  
+- MVC 패턴 구조  
+- MVC 패턴 구현 방법  
+
+<p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
+
+- 게시판 만들기    
+- 게시판 소스 분석할 것

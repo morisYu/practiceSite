@@ -18,6 +18,7 @@ SHOW CHAR SET;
 -- MySQL 에서 제공하는 COLLATE 목록 확인
 SHOW COLLATION;
 
+/************************** 제품 *************************/
 -- 제품 테이블 생성(생성하면서 테이블의 문자셋 설정)
 DROP TABLE IF EXISTS product;
 CREATE TABLE product(
@@ -50,6 +51,7 @@ INSERT INTO product VALUES
 	('P1236', 'Galaxy Tbl S', 900000, '3.3-inch, 212.8*125.6*6.6mm, Super AMOLED display, Octa-Core processor', 
 	'Tablet', 'Samsung', 1000, 'new', 'P1236.png');
 
+/************************** 회원 *************************/
 -- 회원 테이블 생성
 DROP TABLE IF EXISTS member;
 CREATE TABLE member(
@@ -70,3 +72,24 @@ DESC member;
 INSERT INTO member VALUES('user02', '2222', '박모씨', '여', '2000/10/11', 'user02@daum.net', '010-2222-5678', 'there is park', now());
 
 SELECT * FROM member;
+
+/************************** 게시판 *************************/
+-- 테이블 생성
+DROP TABLE IF EXISTS board;
+CREATE TABLE board(
+	num INT NOT NULL AUTO_INCREMENT,
+    id VARCHAR(10) NOT NULL,
+    name VARCHAR(10) NOT NULL,
+    subject VARCHAR(100) NOT NULL,
+    content text NOT NULL,
+    regist_day VARCHAR(30),
+    hit INT,
+    ip VARCHAR(20),
+    PRIMARY KEY(num)
+)DEFAULT CHARSET = utf8mb4;
+
+SELECT * FROM board;
+
+
+INSERT INTO board(num, id, name, subject, content, regist_day, hit, ip)
+	VALUES (NULL, 'admin', '관리자', '주제001', '내용001', now(), 0, 'ip');

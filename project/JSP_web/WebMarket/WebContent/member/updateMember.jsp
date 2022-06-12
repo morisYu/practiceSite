@@ -12,7 +12,7 @@ crossorigin="anonymous">
 %>
 <sql:setDataSource var="dataSource"
 	url="jdbc:mysql://localhost:3306/WebMarketDB?useSSL=false&serverTimezone=Asia/Seoul"
-	driver="com.mysql.jdbc.Driver" user="root" password="1234" />
+	driver="com.mysql.jdbc.Driver" user="root" password="1111" />
 
 <sql:query dataSource="${dataSource}" var="resultSet">
    SELECT * FROM MEMBER WHERE ID=?

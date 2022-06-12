@@ -97,4 +97,13 @@
 		<url-pattern>/ch12/filter03_process.jsp</url-pattern>
 	</filter-mapping>
 	
+	<!-- MVC 패턴 구현을 위한 서블릿 구성 -->
+	<servlet>
+		<servlet-name>myController</servlet-name>
+		<servlet-class>ch18.com.controller.ControllerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myController</servlet-name>
+		<url-pattern>/ch18/ControllerServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
