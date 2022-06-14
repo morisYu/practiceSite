@@ -8,11 +8,12 @@ ALTER DATABASE MarketBoardDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_c
 /********************** 회원 *************************/
 DROP TABLE IF EXISTS membership;
 CREATE TABLE membership(
-    id VARCHAR(10) NOT NULL,
+	num INT AUTO_INCREMENT,
+    id VARCHAR(10) NOT NULL UNIQUE,
     password VARCHAR(10) NOT NULL,
     name VARCHAR(10) NOT NULL,
     regist_day VARCHAR(50),
-    PRIMARY KEY (id)
+    PRIMARY KEY (num)
 )DEFAULT CHARSET=utf8mb4;
 
 SELECT * FROM membership;
@@ -32,13 +33,6 @@ INSERT INTO membership (id, password, name, regist_day)
 
 SELECT * FROM membership WHERE id LIKE 'user%';
 
+SELECT * FROM membership WHERE id = 'admin';
 
-
-
-
-
-
-
-
-
-
+DELETE FROM membership;

@@ -13,7 +13,7 @@
 		</div>
 		
 		<div>
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav">
 				<c:choose>
 					<c:when test="${ empty sessionId }">
 						<li class="nav-item">
