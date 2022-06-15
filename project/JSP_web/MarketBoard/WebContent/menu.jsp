@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		
-		<div>
+		<div class="container justify-content-end">
 			<ul class="navbar-nav">
 				<c:choose>
 					<c:when test="${ empty sessionId }">
@@ -22,6 +22,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="<c:url value="/member/addMember.jsp" />">회원가입</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<c:url value="/BoardListAction.do?pageNum=1"/>">게시판</a>
+						</li>
 					</c:when>
 					<c:otherwise>
 						<li class="nav-item">
@@ -30,8 +33,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="<c:url value="/member/updateMember.jsp" />">회원수정</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<c:url value="/BoardListAction.do?pageNum=1"/>">게시판</a>
+						</li>
 					</c:otherwise>
 				</c:choose>
 			</ul>
+			
 		</div>
 </nav>

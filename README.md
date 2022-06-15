@@ -331,7 +331,7 @@ font-family: 'KCC-Jeongbeom'; <- 이 부분을 글씨가 적용되는 태그 옵
 
 <p style="color: blue; font-size: 1.2em">✨ 쇼핑몰 </p>
 
-- 상품 관리 테이블 생성 및 상품 등록하기  
+- 상품 관리 테이블 생성 및 상품 등록하기  ****
 
 #### chap16. JDBC로 데이터베이스와 JSP 연동: 상품 조회, 등록, 수정, 삭제하기  
 
