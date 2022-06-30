@@ -34,6 +34,9 @@ crossorigin="anonymous">
 			<h1 class="display-3">게시판</h1>
 		</div>
 	</div>
+	
+	
+	
 	<div class="container">
 		<form action="<c:url value="./BoardListAction.do"/>" method="post">
 			<div>
@@ -41,6 +44,8 @@ crossorigin="anonymous">
 					<span class="badge badge-success">전체 <%=total_record%>건	</span>
 				</div>
 			</div>
+			
+			
 			<div style="padding-top: 50px">
 				<table class="table table-hover">
 					<tr>
@@ -66,6 +71,8 @@ crossorigin="anonymous">
 					%>
 				</table>
 			</div>
+			
+			
 			<div align="center">
 				<c:set var="pageNum" value="<%=pageNum%>" />
 				<c:forEach var="i" begin="1" end="<%=total_page%>">
@@ -82,6 +89,7 @@ crossorigin="anonymous">
 					</a>
 				</c:forEach>
 			</div>
+			
 			<div align="left">
 				<table>
 					<tr>
