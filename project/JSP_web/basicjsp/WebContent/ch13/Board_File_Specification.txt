@@ -1,0 +1,12 @@
+1. writeForm.jsp : 게시판에 추가할 글을 입력하는 페이지
+2. writePro.jsp : 입력된 글을 넘겨받아 글추가를 처리하는 페이지
+3. list.jsp : 게시판의 글목록을 표시하는 페이지
+4. content.jsp : 선택한 글의 내용을 보여주는 페이지
+5. updateForm.jsp : 글을 수정하기 위한 폼을 제공하는 페이지
+6. updatePro.jsp : 글의 수정을 처리하는 페이지
+7. deleteForm.jsp : 글을 삭제하기 위한 폼을 제공하는 페이지
+8. deletePro.jsp : 글의 삭제를 처리하는 페이지
+기타
+9. color.jspf : 색상을 설정하는 조각코드 페이지
+10. style.css : 스타일시트 파일
+11. script.js : 자바스크립트 파일 
